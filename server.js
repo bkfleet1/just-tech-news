@@ -13,5 +13,6 @@ app.use(routes);
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => { // if force: true then it would drop and re-create all of the database tables on startup. 
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log(`
+EXPRESS SERVER RUNNING ON PORT ${PORT}`));
 });
