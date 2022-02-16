@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = require('./routes');
 const sequelize = require('./config/connection');
-const dbPort = require('./config/connection');
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -15,5 +15,5 @@ app.use(routes);
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => { // if force: true then it would drop and re-create all of the database tables on startup. 
   app.listen(PORT, () => console.log(`
-EXPRESS SERVER RUNNING ON PORT ${PORT} & DATABASE CONNECTION ON ${dbPort}`));
+EXPRESS SERVER RUNNING ON PORT ${PORT}`));
 });
