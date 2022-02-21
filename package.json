@@ -4,8 +4,9 @@
   "description": "just-tech-news",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon server.js"
+    "test": "jest",
+    "start": "npx nodemon server.js",
+    "seeds": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
