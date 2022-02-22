@@ -18,10 +18,10 @@ con.connect(function (err) {
     let sql2 = `CREATE DATABASE ${DB_NAME}`;
     con.query(sql1, function (err, result) {
         if (err) throw err;
-        console.log("Database ecommerce_db was dropped successfully");
+        console.log(`Database ${DB_NAME} was dropped successfully`);
         con.query(sql2, function (err, result) {
             if (err) throw err;
-            console.log("Database ecommerce_db was created successfully");
+            console.log(`Database ${DB_NAME} was created successfully`);
             process.exit(1);
         });
     });
