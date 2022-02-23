@@ -4,13 +4,14 @@
   "description": "just-tech-news",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bkfleet1/just-tech-news.git"
   },
-  "author": "Brad Kelley",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bkfleet1/just-tech-news/issues"
@@ -24,7 +25,6 @@
     "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
     "handlebars": "^4.7.7",
-    "jest": "^27.5.1",
     "mysql2": "^2.3.3",
     "sequelize": "^6.16.2"
   }
